@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GreenLeaf | Bibit & Pupuk Organik</title>
+
+    <!-- Tailwind CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.3/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Ikon -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <!-- CSS Kustom -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body class="min-h-screen bg-gradient-to-b from-green-950 to-green-900 text-white">
+    <!-- Navbar -->
+    <header
+      class="sticky top-0 z-50 backdrop-blur-md bg-green-950/80 flex items-center justify-between px-8 py-4 border-b border-green-800 shadow-lg"
+    >
+      <h1 class="text-3xl font-bold flex items-center gap-2 text-green-300">
+        <i class="ph ph-leaf text-green-400 text-3xl"></i> GreenLeaf
+      </h1>
+      <nav class="hidden md:flex gap-6 text-gray-300">
+        <a href="#" class="hover:text-green-400 transition">Beranda</a>
+        <a href="#produk" class="hover:text-green-400 transition">Produk</a>
+        <a href="#tentang" class="hover:text-green-400 transition">Tentang</a>
+        <a href="#kontak" class="hover:text-green-400 transition">Kontak</a>
+      </nav>
+      <button
+        class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg flex items-center"
+      >
+        <i class="ph ph-shopping-cart mr-2"></i> Keranjang
+      </button>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative text-center py-20 px-4 overflow-hidden hero">
+      <div class="fade-up">
+        <h2 class="text-5xl font-extrabold text-green-300 mb-6">
+          Tumbuhkan Kehidupan dari Rumah Anda
+        </h2>
+        <p class="text-gray-300 max-w-2xl mx-auto text-lg">
+          Temukan berbagai bibit tanaman sayur dan pupuk organik terbaik untuk
+          kebun sehat dan ramah lingkungan. GreenLeaf menghadirkan produk alami
+          dengan kualitas unggul untuk Anda yang mencintai alam.
+        </p>
+        <a
+          href="#produk"
+          class="mt-8 inline-block bg-green-600 hover:bg-green-700 px-6 py-3 text-lg rounded-full"
+        >
+          Jelajahi Produk
+        </a>
+      </div>
+
+      <!-- Background -->
+      <div
+        class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1524592094714-0f0654e20314')] bg-cover bg-center opacity-15"
+      ></div>
+    </section>
+
+    <!-- Produk -->
+    <section id="produk" class="px-8 pb-20">
+      <h3 class="text-3xl font-bold text-green-300 text-center mb-10">
+        Produk Unggulan Kami
+      </h3>
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto"
+      >
+        <!-- Produk 1 -->
+        <div class="product-card fade-up">
+          <img
+            src="https://images.unsplash.com/photo-1589987607627-616cac5b9b20"
+            alt="Bibit Tomat"
+          />
+          <div class="p-5 text-center">
+            <h3>Bibit Tomat</h3>
+            <p>Rp10.000</p>
+            <button>Tambah ke Keranjang</button>
+          </div>
+        </div>
+
+        <!-- Produk 2 -->
+        <div class="product-card fade-up">
+          <img
+            src="https://images.unsplash.com/photo-1560493676-04071c5f467b"
+            alt="Bibit Sawi"
+          />
+          <div class="p-5 text-center">
+            <h3>Bibit Sawi</h3>
+            <p>Rp8.000</p>
+            <button>Tambah ke Keranjang</button>
+          </div>
+        </div>
+
+        <!-- Produk 3 -->
+        <div class="product-card fade-up">
+          <img
+            src="https://images.unsplash.com/photo-1603712725038-6e8a04b6b42e"
+            alt="Pupuk Organik Cair"
+          />
+          <div class="p-5 text-center">
+            <h3>Pupuk Organik Cair</h3>
+            <p>Rp25.000</p>
+            <button>Tambah ke Keranjang</button>
+          </div>
+        </div>
+
+        <!-- Produk 4 -->
+        <div class="product-card fade-up">
+          <img
+            src="https://images.unsplash.com/photo-1615485291306-25d6a3365f3f"
+            alt="Pupuk Kompos Alam"
+          />
+          <div class="p-5 text-center">
+            <h3>Pupuk Kompos Alam</h3>
+            <p>Rp18.000</p>
+            <button>Tambah ke Keranjang</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tentang -->
+    <section id="tentang" class="bg-green-950/70 py-16 text-center border-t border-green-800">
+      <h3 class="text-3xl font-bold text-green-300 mb-4">Tentang GreenLeaf</h3>
+      <p class="max-w-3xl mx-auto text-gray-300">
+        GreenLeaf adalah toko e-commerce yang berfokus pada produk ramah
+        lingkungan. Kami menyediakan bibit tanaman sayur, pupuk organik, dan
+        kompos alami untuk membantu Anda menanam dan merawat kebun yang sehat
+        dan berkelanjutan.
+      </p>
+    </section>
+
+    <!-- Footer -->
+    <footer
+      id="kontak"
+      class="bg-green-950 border-t border-green-800 py-10 text-center text-gray-400"
+    >
+      <div class="flex justify-center gap-6 mb-4 text-2xl socials">
+        <a href="#" class="hover:text-green-400"><i class="ph ph-instagram-logo"></i></a>
+        <a href="#" class="hover:text-green-400"><i class="ph ph-facebook-logo"></i></a>
+        <a href="#" class="hover:text-green-400"><i class="ph ph-sprout"></i></a>
+      </div>
+      <p class="text-sm">© 2025 GreenLeaf. Semua hak cipta dilindungi.</p>
+    </footer>
+
+    <!-- Animasi Scroll -->
+    <script>
+      const fadeUps = document.querySelectorAll(".fade-up");
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) entry.target.classList.add("show");
+          });
+        },
+        { threshold: 0.1 }
+      );
+      fadeUps.forEach((el) => observer.observe(el));
+    </script>
+  </body>
+</html>
